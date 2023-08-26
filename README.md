@@ -26,7 +26,11 @@ npm i -g @nestjs/cli
 ```
 docker-compose up -d
 ```
-5. Reconstruir la base de datos con la semilla `SEED` por petición de tipo `GET`:
+5. Levantar el proyecto con el comando: 
+```
+npm run start:dev
+```
+6. Reconstruir la base de datos con la semilla `SEED` por petición de tipo `GET`:
 ```
 http://localhost:3000/api/v2/seed
 ```
