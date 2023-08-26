@@ -11,7 +11,7 @@ export class PokedexService {
   constructor(
     @InjectModel( Pokedex.name )
     private readonly pokedexModel: Model<Pokedex>
-  ) {}
+  ) { }
 
   async create( createPokedexDto: CreatePokedexDto ) {
     createPokedexDto.name = createPokedexDto.name.toLocaleLowerCase();

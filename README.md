@@ -31,9 +31,9 @@ docker-compose up -d
 ```
 npm run start:dev
 ```
-7. Reconstruir la base de datos con la semilla `SEED` por petición de tipo `GET`:
+7. Reconstruir la base de datos con la semilla `SEED` por petición de tipo `GET` y la variable `PORT`:
 ```
-http://localhost:3000/api/v2/seed
+http://localhost:PORT/api/v2/seed
 ```
 
 ### Tecnologías usadas:
