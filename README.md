@@ -13,24 +13,25 @@ Esta sección se enfoca en las variables de entorno y dockerizar la API REST. Lo
 
 ### Configuraciones para levantar nuestro proyecto
 
-1. Clonar el repositorio. 
-2. Ejecutar el comando: 
+1. Clonar el repositorio.
+2. Crear archivo `.env` y definir las variables de entorno. 
+3. Ejecutar el comando: 
 ```
 npm install
 ```
-3. Tener `Nest CLI` instalando: 
+4. Tener `Nest CLI` instalando: 
 ```
 npm i -g @nestjs/cli
 ```
-4. Levantar la base de datos: 
+5. Levantar la base de datos: 
 ```
 docker-compose up -d
 ```
-5. Levantar el proyecto con el comando: 
+6. Levantar el proyecto con el comando: 
 ```
 npm run start:dev
 ```
-6. Reconstruir la base de datos con la semilla `SEED` por petición de tipo `GET`:
+7. Reconstruir la base de datos con la semilla `SEED` por petición de tipo `GET`:
 ```
 http://localhost:3000/api/v2/seed
 ```
