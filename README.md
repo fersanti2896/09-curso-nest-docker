@@ -36,6 +36,18 @@ npm run start:dev
 http://localhost:PORT/api/v2/seed
 ```
 
+# Build de Producción en Docker
+1. Crear archivo `.env.prod`. 
+2. Llenar las variables de producción considerando el archivo `.env.template` que están definidas. 
+3. Crear la nueva imagen `Docker` del proyecto, con el comando: 
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+4. __Nota.__ Si se requiere levantar la imagen en discacht, se hace el comando: 
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
+```
+
 ### Tecnologías usadas:
 * MongoDB
 * Nest
