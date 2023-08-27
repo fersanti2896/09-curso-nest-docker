@@ -14,7 +14,7 @@ Esta sección se enfoca en las variables de entorno y dockerizar la API REST. Lo
 ### Configuraciones para levantar nuestro proyecto
 
 1. Clonar el repositorio.
-2. Crear archivo `.env` y definir las variables de entorno. 
+2. Renombrar el archivo `.env.template` a `.env` y definir las variables de entorno. 
 3. Ejecutar el comando: 
 ```
 npm install
